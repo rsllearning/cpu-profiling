@@ -38,7 +38,5 @@ jobs:
           script: |
             chmod +x gradlew
             ./gradlew installDebug
-            touch cpu-profiling/emulator.log
-            chmod 777 cpu-profiling/emulator.log
-            adb shell am start -n com.example.cpu-profiling/.MainActivity 
+            adb shell am start -n com.example.cpu_profiling/.MainActivity 
             sleep 30
